@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VR Manager</title>
+<link href="Assets/styles/blogPostStyle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/table.css">
+</head>
+
+<body>
+	<div id="mainwrapper">
+	<header> 
+	
+	  <div id="logo">
+	  <img src="Assets/images/CJ_4DPLEX_Horizontal_W.png" alt="CJ_4DPLEX_Horizontal">
+		  
+	  </div>
+   		 <nav> 
+	<h1>-</h1>
+	 </nav>
+  </header>
+		
+    <div id="css_tabs">
+
+    <input id="tab1" type="radio" name="tab" checked="checked"   />
+    <input id="tab2" type="radio" name="tab" />
+
+    <label for="tab1"><img src="Assets/icon/headset-vr.svg"  height="20px" class="menu"/></label>
+    <label for="tab2"><img src="Assets/icon/gear.svg"  height="20px" class="menu"/></label>
+ 
+		
+		 <div class="tab1_content">
+			  <div id="content">
+		
+				  <div id="hmdcontents">
+				 
+					  		   <div class="add_contents">
+			 <img src="Assets/icon/grid-3x3-gap-fill.svg" alt="hmdArray"/>
+			<img src="Assets/icon/power.svg" alt="powerOff"/>
+			 </div>
+				<div id="hmd_array">
+					101
+					<div class="hmd">
+						<div class="hmdstate">
+						
+							<div class="staterow" >
+								<img src="Assets/icon/thermometer-high.svg" alt="thermometer" />38.9℃
+								</div>
+							<div class="staterow" >
+								<img src="Assets/icon/battery-half.svg" alt="battery" />50%
+								</div>
+							<div class="staterow" >
+								<img src="Assets/icon/play-fill.svg" alt="play" />Now Playing
+								</div>
+					</div>
+				  </div>
+							102
+					<div class="hmd">
+						<div class="hmdstate">
+						
+							<div class="staterow" >
+								<img src="Assets/icon/thermometer-high.svg" alt="thermometer" />38.9℃
+							</div>
+							<div class="staterow" >
+								<img src="Assets/icon/battery-half.svg" alt="battery" />50%
+							</div>
+							<div class="staterow" >
+								<img src="Assets/icon/play-fill.svg" alt="play" />Now Playing
+							</div>
+						</div>
+				  	</div>
+					103
+					<div class="hmd">
+
+						<div class="hmdstate">
+							
+						</div>
+
+				  	</div>		
+				  </div>
+					  
+				  </div>
+ <section class="mediaContent"> 
+	   <div class="mediacontent_left">
+	 <img src="Assets/images/4DX_poster_B.jpg" alt="contents"/>    
+	   </div>
+	     <div class="mediacontent_right">
+			<div class="mediaPlayInfo">
+			 <div class="mediaPlayLine"></div> 
+<!--							<progress value="20" max="100" width="100"></progress>-->
+					 <div class="end_time"> 00:00</div> 
+			
+				 <div class="start_time">00:00</div> 		
+				
+				</div>
+	
+      </div>
+	  </section>
+				   </div>
+			 
+		
+  <table class="table table--block" cellspacing="0" cellpadding="0">
+	  	 <div class="add_contents">
+			 <img src="Assets/icon/plus.svg" alt="contentsAdd" height= "22px" />
+			 </div>
+    <thead>
+    <tr>
+      <th style="width:10%">No</th>
+      <th>Contents</th>
+      <th>VR/Screen</th>
+      <th>Play Time</th>
+      <th>Play/Stop</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>video1</td>
+      <td>VR</td>
+      <td>3:57</td>
+      <td>
+		<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+		</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>video2</td>
+      <td>Screen</td>
+      <td>12:05</td>
+      <td>		<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></td>
+    </tr>
+    </tbody>
+  </table>
+     </div>
+    <div class="tab2_content">
+<!-- <div id="content">-->
+ <!--
+   <section class="mediaContent"> 
+	   <div class="mediacontent_left">
+	    
+	   	<img src="Assets/icon/play-circle.svg"  height="70px"/> 
+	   </div>
+	     <div class="mediacontent_right">
+			<div class="mediaPlayInfo">
+			 <div class="mediaPlayLine"></div> 
+					 <div class="end_time"> 00:00</div> 
+				 <div class="start_time">00:00</div> 				
+				</div>
+			
+      </div>
+	  </section>
+
+
+    <section class="mainContent"> 
+   
+      <h1>HMD LIST</h1>
+     
+    <div id="listBg">
+		<div class="condition_bar" >
+		101 
+			<img class="enabled" src="Assets/icon/headset-vr.svg"/>
+			<img class="enabled" alt="disabled" src="Assets/icon/battery-half.svg" height="25px"/>
+			
+		</div>
+		<div class="condition_bar" style="background-color: #A8B8C1" >
+		102 <img class="disabled" alt="disabled" src="Assets/icon/x-octagon.svg" height="25px"/></div>
+	
+		<div class="condition_bar" >
+			
+		103 
+			<img class="enabled" src="Assets/icon/headset-vr.svg"/>
+			<img class="enabled" alt="disabled" src="Assets/icon/battery-half.svg" height="25px"/></div>
+		
+	
+    </div>
+
+  
+      <aside class="authorInfo"> 
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </aside>
+    </section>
+	      <section class="sideContent"> 
+	  
+      <h1>>Play Contents</h1>
+	   <aside class="playInfoFrame"> 
+      		<div class="play_bar" >
+				
+				1. <img src="Assets/icon/play-fill.svg"  height="25px" />
+					play1
+         </div>
+		 		<div class="play_bar" >
+				2. 	<img src="Assets/icon/play-fill.svg"  height="25px" />
+					play2
+         </div>
+  		 		<div class="play_bar" >
+				3. 
+				<img src="Assets/icon/play-fill.svg"  height="25px" />	play3
+         </div>
+
+   
+      </aside>
+	
+           <aside class="authorInfo"> 
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </aside>
+	  </section>
+		 
+    
+		-->	
+<!--</div>-->
+	
+	
+	</div>
+
+		 
+    </div>
+		  </div>
+  <!--  <div id="footerbar"></div>-->
+
+	
+		
+</body>
+</html>
