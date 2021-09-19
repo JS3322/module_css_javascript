@@ -12,6 +12,7 @@ Javascript Module List
 ### Log
 20210904 html init
 20210916 css animation init
+20210918 api server prototype init
 
 ---
 *name : JS  
