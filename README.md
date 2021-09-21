@@ -13,6 +13,7 @@ Javascript Module List
 20210904 html init
 20210916 css animation init
 20210918 api server prototype init
+20210922 css animation 3d fix
 
 ---
 *name : JS  
