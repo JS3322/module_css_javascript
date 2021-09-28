@@ -1,0 +1,60 @@
+<!--
+    * @Process: complete
+    * @Project_Name: module
+    * @Package_Name: test
+    * @Made_By: JS
+    * @The_creation_time: 2021-09-28 오후 01:01:10
+    * @File_Name: web_component.html
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEST</title>
+</head>
+
+
+
+
+<body>
+    <custom-input name='123'></custom-input>    
+<script>
+    class CustomInput extends HTMLElement {
+
+    
+    connectedCallback() {
+        this.render()
+    }
+    render() {
+        let 라벨 = document.createElement('label');
+        라벨.innerHTML = '이름을 입력';
+        this.appendChild(라벨);
+        let 인풋 = document.createElement('input');
+        this.appendChild(인풋);
+
+        let 인풋2 = document.createElement('style');
+        this.appendChild(인풋2);
+    }
+    static get observedAttributes() {
+        return ['name']
+    }
+    attributeChangedCallback() {
+        this.render()
+    }
+}
+customElements.define('custom-input', CustomInput);
+</script>
+
+</body>
+</html>
+<!--
+<script>
+    class CustomInput extends LitElement {
+        render() {
+            return html`<label>라벨태그</label><input>`;
+        }
+    }
+    customElements.define('custom-input', CustomInput);
+</script>
+-->
