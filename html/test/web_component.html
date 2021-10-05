@@ -5,6 +5,7 @@
     * @Made_By: JS
     * @The_creation_time: 2021-09-28 오후 01:01:10
     * @File_Name: web_component.html
+    * @contents: shadowDOM + web component
 -->
 <!doctype html>
 <html>
@@ -18,7 +19,17 @@
 
 
 <body>
-    <custom-input name='123'></custom-input>    
+    <custom-input name='123'></custom-input>
+    
+    <!--
+    <template id = "template1">
+        <label>이메일을 입력하세요</label>
+        <input>
+        <style>
+            label {color:red}
+        </style>
+    </template>
+    -->
 
 
 <script>
@@ -27,6 +38,11 @@
     
     connectedCallback() {
         this.render()
+
+        /*
+        this.attachShadow({mode:'open'});
+        this.shadowRoot.append(template1.connect.cloneNode(true))
+        */
     }
     render() {
         let 라벨 = document.createElement('label');
