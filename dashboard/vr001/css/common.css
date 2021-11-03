@@ -1,0 +1,61 @@
+.filebox label {
+  display: inline-block;
+  padding: .1em .55em;
+  color: #fff;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #4A5E82;
+  cursor: pointer;
+
+
+  border-radius: .25em;
+}
+.filebox input[type="file"] { /* 파일 필드 숨기기 */ 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.button-icon {
+  margin: auto;
+  width: 90%;
+  text-align: right;
+  padding-bottom: 5px;
+  /*	padding: 3% 0 3% 0;*/
+}
+.button-icon img {
+  height: 17px;
+  background: #64B2D6;
+  background: -webkit-linear-gradient(to right, #2193b0, #6dd5ed); /* Chrome 1`0-25, Safari 5.1-6 */
+  /*	box-shadow: 1px 1px 1px 1px rgba(200,200,200,1.00);*/
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px #444444;
+}
+.button-icon img:hover {
+  cursor: pointer;
+  background-color: #29323c;
+}
+.table-button {
+  text-align: right;
+  margin-right: 5%;
+  margin-bottom: 12px;
+}
+.button-letter {
+  font-size: 13px;
+  color: #29323c;
+  padding: 3px 10px;
+  background-color: #89B5D0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #444444;
+}
+.button-letter:hover {
+  cursor: pointer;
+  background-color: #29323c;
+	color: #fff;
+}
