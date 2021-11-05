@@ -1,8 +1,4 @@
-body {
-/*	editing to make scrolling invisible
-	overflow:hidden;
-*/
-}
+
 .search{
 	width: 90%;
 	margin: 20px auto 10px auto;
@@ -19,20 +15,20 @@ margin-bottom: 3px;
 	display: inline-flex;
 }
 
-#ingest-table {
+#query-table {
 margin: auto;
 width:90%;
 text-align:center;
 color: #29323c;
 
 }
-#ingest-table tbody{
+#query-table tbody{
 overflow:auto;
 background-color: lightgray;
 
 
 }
-#ingest-table th { 
+#query-table th { 
 background:#29323c;
 color: #D9D9D9;
 font-size: 14px;
@@ -41,7 +37,7 @@ word-break:break-all;
 }
 
 
-#ingest-table td {
+#query-table td {
   padding: 5px 20px;
   word-break:break-all;
 }
@@ -59,13 +55,13 @@ word-break:break-all;
 /*	padding: 10px;*/
 }
 
-.register .register-contents{
+.register .register-query{
 	display: inline-block;
 	margin-top:20px;
 	
 }
 
-.register-contents table{
+.register-query table{
 font-size: 14px;
 margin: auto 10px auto auto;
 text-align:center;
@@ -75,11 +71,11 @@ font-weight: normal;
 background-color: rgba(255,255,255,0.6);
 
 }
-.register-contents table body{
+.register-query table body{
 	overflow:auto;
 	
 }
-.register-contents table th{
+.register-query table th{
 padding: 5px 20px;
 word-break:break-all;
 
@@ -94,13 +90,6 @@ background-color: rgba(0,0,0,0.2);
 
 }
 
-#poster-preview img{
-	float:left;
-	width: 160px;
-	height: 125px;
-	display: inline;
-	margin-right: 10px;
-}
 
 
 
@@ -109,10 +98,10 @@ background-color: rgba(0,0,0,0.2);
 display: block;
 	}
 
-#ingest-table th { 
+#query-table th { 
 	font-size: 12px;
 	}
-#ingest-table td {
+#query-table td {
 	font-size: 10px;
 	}
 	

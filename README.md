@@ -5,10 +5,10 @@ Module List
 ---
 ### Package Architecture
 #### Module Name | Module Explanation | Route
-1. API | Nestjs API server test | api
-2. CSS | CSS3 animation/button native design | css
-3. HTML | CSS Design start page | html
-4. Resource | href image source | resource
+1. Effect | Metaphor effect design | effect_*
+2. Button | Animation/button native design | button_*
+3. Calendar WebApp | Web calendar reservation system | calendar
+4. Dashboard Prototype | VR Web Controller Component | dashboard
 
 ---
 ### Log

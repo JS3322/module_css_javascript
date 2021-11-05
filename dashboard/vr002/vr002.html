@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>menu - header</title>
+<link href="./css/vr002.css" rel="stylesheet" type="text/css">
+<link href="../vr001/css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	
+  <div class="mainwrapper">
+	
+
+<!--	  <embed src="../vr003/vr003.html" width="100%" height="700px"/>-->
+    <section class="video-section">
+      <div class="poster"> <img src="../vr001/assets/images/poster_B_header.png"  alt="contents"/> </div>
+      <div class="playinfo">
+<!--
+        <div class="playLineHolder">
+          <div class="playLine"></div>
+        </div>
+-->    
+		  <div class="progress-bar">
+		  <span style="width:40%"></span></div>
+       
+		  
+        <div class="playinfo-text">
+          <div class="contents_name">ContentsName.mp4</div>
+          <div class="end_time">00:00 / 00:00</div>
+        </div>
+		   <div class="playicon"> <img src="../vr001/assets/icon/play-fill.svg">
+<!--			   <img src="./Assets/icon/stop.svg"> -->
+		  </div>
+      </div>
+    </section>
+    <div id="tabs">
+      <input id="tab1" type="radio" name="tab" checked="checked" style="display: none" />
+      <input id="tab2" type="radio" name="tab" style="display: none"/>
+      <label for="tab1"> HMD </label>
+      <label for="tab2"> Contents </label>
+      <div class="tab1_content">
+        <div id="content">
+          <div id="hmdcontents">
+            <div class="block_name">HMD</div>
+            <div class="button-icon"> <img src="../vr001/assets/icon/list.svg" alt="hmdArray"/> <img src="../vr001/assets/icon/x-octagon.svg" alt="powerOff"/> </div>
+            <div id="hmd_array">
+              <div class="hmd"> 101
+                <hr/>
+                <div class="hmdstate">
+                  <div class="staterow" > <img src="../vr001/assets/icon/thermometer-high.svg" alt="thermometer" />38.9℃ </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/battery-half.svg" alt="battery" />50% </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/play-fill.svg" alt="play" />contents </div>
+                  <div class="staterow" > VR </div>
+                </div>
+              </div>
+              <div class="hmd">102
+                <hr/>
+                <div class="hmdstate">
+                  <div class="staterow" > <img src="../vr001/assets/icon/thermometer-high.svg" alt="thermometer" />38.9℃ </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/battery-half.svg" alt="battery" />50% </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/play-fill.svg" alt="play" />contents </div>
+                  <div class="staterow" > SCREEN </div>
+                </div>
+              </div>
+              <div class="hmd"> 103
+                <hr/>
+                <div class="hmdstate">
+                  <div class="staterow" > <img src="../vr001/assets/icon/thermometer-high.svg" alt="thermometer" /> </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/battery-half.svg" alt="battery" /> </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/play-fill.svg" alt="play" /> </div>
+                  <div class="staterow" > - </div>
+                </div>
+              </div>
+              <div class="hmd"> 103
+                <hr/>
+                <div class="hmdstate">
+                  <div class="staterow" > <img src="../vr001/assets/icon/thermometer-high.svg" alt="thermometer" /> </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/battery-half.svg" alt="battery" /> </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/play-fill.svg" alt="play" /> </div>
+                  <div class="staterow" > - </div>
+                </div>
+              </div>
+              <div class="hmd"> 103
+                <hr/>
+                <div class="hmdstate">
+                  <div class="staterow" > <img src="../vr001/assets/icon/thermometer-high.svg" alt="thermometer" /> </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/battery-half.svg" alt="battery" /> </div>
+                  <div class="staterow" > <img src="../vr001/assets/icon/play-fill.svg" alt="play" /> </div>
+                  <div class="staterow" > - </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab2_content">
+        <div class="block_name">Contents</div>
+        <table class="contents-table" cellspacing="0" cellpadding="0">
+          <div class="table-button"> <span class="button-letter"> Clear</span> <span class="button-letter"> Load</span></div>
+          <thead>
+            <tr>
+              <th style="width:15%">Order</th>
+              <th>Contents</th>
+              <th>Validation</th>
+              <th>Play Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-contents">
+              <td>1</td>
+              <td>video1</td>
+              <td>Confirmed</td>
+              <td>3:57</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><img src="../vr001/assets/icon/arrow-right.svg"> Query1</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="row-contents">
+              <td>2</td>
+              <td>video2</td>
+              <td>Deleted</td>
+              <td>10:11</td>
+            </tr>
+            <tr class="row-contents">
+              <td>3</td>
+              <td>video1</td>
+              <td>Confirmed</td>
+              <td>3:57</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><img src="../vr001/assets/icon/arrow-right.svg"> Query1</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><img src="../vr001/assets/icon/arrow-right.svg"> Query1</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<!-- 테스트용 제이쿼리 라이브러리 import-->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'> </script>
+	
+<!--  <script src='http:ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'> </script>-->
+
+</html>

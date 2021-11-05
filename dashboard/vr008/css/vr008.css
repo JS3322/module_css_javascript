@@ -1,0 +1,63 @@
+
+.search{
+	width: 90%;
+	margin: 20px auto 10px auto;
+	font-size: 14px;
+	display: block;
+	color: #DDD;
+}
+.search input{
+	cursor: pointer;
+}
+
+.search .search-row1{
+margin-bottom: 3px;
+	display: inline-flex;
+}
+
+#event-table {
+margin: auto;
+width:90%;
+text-align:center;
+color: #29323c;
+
+}
+#event-table tbody{
+overflow:auto;
+background-color: lightgray;
+
+
+}
+#event-table th { 
+background:#29323c;
+color: #D9D9D9;
+	font-size: 1.2rem;
+padding: 5px 20px;
+word-break:break-all;
+
+}
+
+
+#event-table td {
+		font-size: 1rem;
+  padding: 5px 20px;
+  word-break:break-all;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+.search .search-row1{
+display: block;
+	}
+
+
+	
+}
+@media screen and (max-width: 420px) {
+
+}
