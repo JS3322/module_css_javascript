@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const area = document.getElementById('svg');
+let dots = [];
+
+console.time('Draw using SVG');
+
+for(let i = 0; i < 500; i++) {
+    for(let j = 0; j < 500; j++) {
+        dots.push("<rect class='dot' style='fill:"+getHex()+"' width='1' height='1' x='"+(i)+"' y='"+(j)+"'></rect>");
+    }
+}
+
+area.innerHTML = area.innerHTML + dots.join("");
+
+console.timeEnd('Draw using SVG');
+    </script>
+    
+</body>
+</html>
