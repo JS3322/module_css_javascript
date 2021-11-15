@@ -38,15 +38,20 @@ const f3 = (message) => {
     });
 }
 
-// //promise race and all
-// console.log("x");
-// Promise.race([f1(), f2(), f3()]).then((res) => {
-//     console.log(res);
-//     console.timeEnd("x");
-// });
+console.log("start");
+async function order() {
+    try {
+        // const result1 = await f1();
+        // const result2 = await f2(result1);
+        // const result3 = await f3(result2);
+        // console.log(result3);
 
-f1()
-    .then((res) => f2(res))
-    .then((res) => f3(res))
-    .then((res) => console.log(res))
-    .catch(console.log);
+        const result = await Promise.all([f1(), f2(), f3()]);
+        console.log(result);
+    }catch(e) {
+        console.log(e);
+    }
+
+    console.log("END");
+}
+order();
