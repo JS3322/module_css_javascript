@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* .btn {
+            font-size: 2rem;
+        }
+        .desc {
+            color: red;
+        } */
+
+        body {
+            font-size: 3rem;
+        }
+        .menu {
+            display:flex;
+            background: yellowgreen;
+        }
+        .menu-link {
+            margin: .1em;
+            padding: .3em;
+            color: #fff;
+            text-decoration: none;
+            background: dodgerblue;
+            list-style: none;
+        }
+        .menu-active {
+            background: orange;
+        }
+    </style>
     <script>
         //window = 자바스크립트 전역객체 onload = 전체함수가 실행되면 함수 실행 
         // window.onload = function () {
@@ -34,8 +61,8 @@
     </script>
 </head>
 <body>
-    <hi id="main-title">
-        <span class="desc"></span>
+    <!-- <hi id="main-title">
+        <span class="desc">test!</span>
         DOM (Document Object Model)
         
     </hi>
@@ -48,8 +75,24 @@
         <section>
             <header>s header</header>
             section2
+            <ul class='ul-test'>
+            <li class="li-test">test1</li>
+            <li class="li-test">test2</li>
+        </ul>
         </section>
     </article>
+    <button class="btn">Click!</button> -->
+
+    <h1 id="main-title">
+        Event
+    </h1>
+
+    <nav class="menu">
+        <a href="#" class="menu-link" data-menu="1">menu 1</a>
+        <a href="#" class="menu-link" data-menu="2">menu 2</a>
+        <a href="#" class="menu-link" data-menu="3">menu 3</a>
+    </nav>
+
     <script>
         //getElementsByRagName 유사 배열형태로 반환
         //querySelectorAll querySelector('#selector span') css 선택자 사용하여 편함
@@ -58,15 +101,84 @@
         //     tagTest[i].style.border = '1px solid red';
         // }
 
-        var link = document.querySelector('.test a');
-        console.log(link.getAttribute('href'));
-        link.setAttribute('href', 'https://cleancode.kr');
-        //클래스의 속성 추가하기
-        link.className = 'inputClass';
-        link.classList.add('inputClass2', 'inputClass3' );
-        setTimeout(function() {
-            link.classList.remove('inputClass2');
-        }, 2000);
+        // var link = document.querySelector('.test a');
+        // console.log(link.getAttribute('href'));
+        // link.setAttribute('href', 'https://cleancode.kr');
+        // //클래스의 속성 추가하기
+        // link.className = 'inputClass';
+        // link.classList.add('inputClass2', 'inputClass3' );
+        // setTimeout(function() {
+        //     link.classList.remove('inputClass2');
+        // }, 2000);
+
+        // var ulCheck = document.querySelector('.ul-test');
+        // var listElem = document.createElement('li');
+        // listElem.innerHTML = '<span>test4<span>'
+        // ulCheck.appendChild(listElem);
+
+        // var btn = document.querySelector('.btn');
+        // var desc = document.querySelector('.desc');
+        // console.log(btn);
+
+
+        // function btnClickHandler() {
+        //     desc.style.backgroundColor = 'dodgerblue';
+        // }
+        // btn.addEventListener('click', btnClickHandler);
+        // var currentMenu;
+        // var menuLinks = document.querySelectorAll('.menu-link');
+
+        // function clickMenuHandler() {
+        //     // var activeMenu = document.querySelector('.menu-active');
+        //     // if(activeMenu) {
+        //     //     activeMenu.classList.remove('menu-active');
+        //     // }
+        //     // this.classList.add('menu-active');
+        //     if (currentMenu) {
+        //         currentMenu.classList.remove('menu-active');
+        //     }
+        //     this.classList.add('menu-active');
+        //     currentMenu = this;
+        // }
+
+        // for(var i=0; i< menuLinks.length; i++) {
+        //     menuLinks[i].addEventListener('click', clickMenuHandler)
+        // }
+
+        //eventObject output
+        var currentMenu;
+        var menu = document.querySelector('.menu');
+
+        function activate(elem) {
+            elem.classList.add('menu-active');
+            currentMenu = elem;
+        }
+
+        function inactivate(elem) {
+            elem.classList.remove('menu-active');
+        }
+        
+        
+        function clickHandler(e) {
+            // console.log(e);
+            // console.log(e.currentTarget);
+            // console.log(e.target);
+            // console.log(this == e.currentTarget);
+            // console.log(this == e.target);
+            // if (currentMenu) {
+            //     currentMenu.classList.remove('menu-active');
+            // }
+            // e.target.classList.add('menu-active');
+            // currentMenu= e.target;
+
+            if(currentMenu) {
+                inactivate(currentMenu);
+            }
+            activate(e.target);
+        }
+
+        menu.addEventListener('click', clickHandler);
+        activate(document.querySelectorAll('.menu-link')[2]);
     </script>
 </body>
 </html>
