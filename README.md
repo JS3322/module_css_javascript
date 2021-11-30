@@ -9,6 +9,7 @@ Module List
 2. Button | Animation/button native design | button_*
 3. Calendar WebApp | Web calendar reservation system | calendar
 4. Dashboard Prototype | VR Web Controller Component | dashboard
+5. Calculator | fif C and rust module | embed
 
 ---
 ### Log
