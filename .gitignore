@@ -134,6 +134,12 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 
+#env
+.env
+
+#video
+*.mp4
+
 # Private File
 README_private.md
 .DS_STORE

@@ -3,27 +3,22 @@ Module List
 ```
 
 ---
-### TODO List
-- [ ] effect
-[ ] effect scroll background
-- [ ] animation
-[ ] animation character
+### TODO List | Route
+- [O] metaphor view effect design | effect_*
+- [O] animation/button native design | button_*
+- [O] Web calendar reservation system | ux_calendar_css
+- [O] VR Web Controller Component | ux_dashboard_complex
+- [O] fif connect module | backend_embedLibConnect_js
+- [ ] effect scroll background
+- [ ] animation character
+- [ ] with Video Background
 
 ---
-### Package Architecture
-#### Module Name | Module Explanation | Route
-1. Effect | Metaphor effect design | effect_*
-2. Button | Animation/button native design | button_*
-3. Calendar WebApp | Web calendar reservation system | calendar
-4. Dashboard Prototype | VR Web Controller Component | dashboard
-5. Calculator | fif C and rust module | embed
-
----
-## Stay in touch
+### Stay in touch
 - Developer - [JS KIM](https://cleancode.kr)
 
 ---
-## License
+### License
 [MIT licensed](LICENSE)
 
 ---
