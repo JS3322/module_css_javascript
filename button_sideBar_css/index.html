@@ -1,39 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
+  <meta charset="UTF-8">
+  <title>Solar System Explorer</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <input type="checkbox" id="menuicon">
-    <header>
-        <div>
-            <ul class="navi">
-                <li class="logo"><a>top logo area</a></li>
-                <li><a>menu01</a></li>
-                <li><a>menu02</a></li>
-                <li><a>menu03</a></li>
-                <li><a>menu04</a></li>
-                <li><a>menu05</a></li>
-            </ul>
-            <label for="menuicon" class="menubtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </header>
 
-    <div class="container">
-        <div class="contents">
-            <span class="area_desc">CONTENR AREA</span>
-        </div>
-        <div class="sidebar">
-            <span class="area_desc">SIDEBAR AREA</span>
-        </div>
-    </div>
+
+<h1 class='logo'>
+  Solar explorer
+</h1>
+
+<input class='planet5' id='jupiter' name='planet' type='radio'>
+<label class='jupiter menu' for='jupiter'>
+  <div class='preview'></div>
+  <div class='info'>
+    <h2>
+      <div class='pip'></div>
+      Jupiter
+    </h2>
+    <h3>5.203 AU</h3>
+  </div>
+</label>
+<input checked='checked' class='planet4' id='mars' name='planet' type='radio'>
+<label class='menu mars' for='mars'>
+  <div class='preview'></div>
+  <div class='info'>
+    <h2>
+      <div class='pip'></div>
+      Mars
+    </h2>
+    <h3>1.524 AU</h3>
+  </div>
+</label>
+<input checked='checked' class='planet3' id='earth' name='planet' type='radio'>
+<label class='menu earth' for='earth'>
+  <div class='preview'></div>
+  <div class='info'>
+    <h2>
+      <div class='pip'></div>
+      Earth
+    </h2>
+    <h3>1 AU</h3>
+  </div>
+</label>
+<input checked='checked' class='planet2' id='venus' name='planet' type='radio'>
+<label class='menu venus' for='venus'>
+  <div class='preview'></div>
+  <div class='info'>
+    <h2>
+      <div class='pip'></div>
+      Venus
+    </h2>
+    <h3>0.723 AU</h3>
+  </div>
+</label>
+<input checked='checked' class='planet1' id='mercury' name='planet' type='radio'>
+<label class='menu mercury' for='mercury'>
+  <div class='preview'></div>
+  <div class='info'>
+    <h2>
+      <div class='pip'></div>
+      Mercury
+    </h2>
+    <h3>0.39 AU</h3>
+  </div>
+</label>
+  
 </body>
 </html>

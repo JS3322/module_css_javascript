@@ -4,11 +4,11 @@ Module List
 
 ---
 ### TODO List | Route
-- [O] metaphor view effect design | effect_*
-- [O] animation/button native design | button_*
-- [O] Web calendar reservation system | ux_calendar_css
-- [O] VR Web Controller Component | ux_dashboard_complex
-- [O] fif connect module | backend_embedLibConnect_js
+- [x] metaphor view effect design | effect_*
+- [x] animation/button native design | button_*
+- [x] Web calendar reservation system | ux_calendar_css
+- [x] VR Web Controller Component | ux_dashboard_complex
+- [x] fif connect module | backend_embedLibConnect_js
 - [ ] effect scroll background
 - [ ] animation character
 - [ ] with Video Background
