@@ -1,3 +1,12 @@
+// * @Process: complete
+// * @Project_Name: module
+// * @Package_Name: backend_embedLibConnect_js
+// * @Made_By: JS
+// * @The_creation_time: -
+// * @File_Name: embed_rust.js
+// * @Version : node v14.15.3
+// * @contents: -
+
 const ffi = require("ffi");
 
 // 파일 경로는 Rust 바이너리 파일의 경로로 바꿔줄 것
