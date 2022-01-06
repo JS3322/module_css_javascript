@@ -10,24 +10,6 @@
   /* Likely future */
 }
 
-/* *clss
-planet1~5
-jupiter menu
-mars menu (menu mars)
-earth menu (menu earth)
-venus
-mercury
-preview
-info
-pip
-
-*id
-jupiter
-mars
-earth
-venus
-mercury */
-
 body .solar_systm .planet,
 body input[type="radio"][name="planet"]::after,
 body .overlay {
