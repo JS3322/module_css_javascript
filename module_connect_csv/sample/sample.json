@@ -1,0 +1,16 @@
+[
+    {
+      "id": "1",
+      "name": "js1",
+      "age": "30",
+      "gender": "male",
+      "email": "js@cleancode.kr"
+    },
+    {
+      "id": "2",
+      "name": "js2",
+      "age": "28",
+      "gender": "female",
+      "email": ""
+    }
+  ]
